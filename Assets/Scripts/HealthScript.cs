@@ -4,10 +4,15 @@ using System.Collections;
 public class HealthScript : MonoBehaviour {
 
 
-	int health = 1000;
+	int health = 100;
 
 	void Update () {
+
 		health -= 1;
+		
+		if (health <= 0) {
+			Application.LoadLevel (1);		
+		} 
 	}
 
 	void OnGUI() {
