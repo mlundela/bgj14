@@ -3,7 +3,7 @@ using System.Collections;
 
 public class HealthScript : MonoBehaviour {
 
-	int MAX_HEALTH = 200;
+	int MAX_HEALTH = 800;
 	int health;
 
 	void Start() {
