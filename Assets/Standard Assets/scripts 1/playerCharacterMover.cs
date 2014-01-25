@@ -34,7 +34,7 @@ public class playerCharacterMover : MonoBehaviour {
 
 		anim.SetFloat ("Speed", Mathf.Abs (move));
 
-		rigidbody2D.velocity = new Vector2 (move * maxSpeed ,  rigidbody2D.velocity.y);
+		rigidbody2D.velocity = new Vector2 (move * maxSpeed + 2 ,  rigidbody2D.velocity.y);
 
 		if (move > 0 && !facingRight) {
 					Flip ();
