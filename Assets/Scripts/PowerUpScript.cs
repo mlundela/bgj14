@@ -9,7 +9,9 @@ public class PowerUpScript : MonoBehaviour {
 		Debug.Log("OnTriggerEnter2D");
 		if (other.tag == "Player") {
 			hs = other.GetComponent<HealthScript>();
-			hs.IncreaseHealth(100);
+			hs.IncreaseHealth(200);
+			Destroy (this.gameObject);
 		}
+		//Destroy (this.gameObject);
 	}
 }
