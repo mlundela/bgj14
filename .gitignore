@@ -1,0 +1,11 @@
+Library/
+Assembly-CSharp-firstpass-vs.csproj
+Assembly-CSharp-firstpass.csproj
+Assembly-CSharp-vs.csproj
+Assembly-CSharp.csproj
+Assembly-UnityScript-firstpass-vs.unityproj
+Assembly-UnityScript-firstpass.unityproj
+Temp/
+bgj14-csharp.sln
+bgj14.sln
+bgj14.userprefs
