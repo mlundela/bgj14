@@ -3,8 +3,8 @@ using System.Collections;
 
 public class HealthScript : MonoBehaviour {
 
-	int MAX_HEALTH = 800;
-	int health;
+	public int MAX_HEALTH = 1600;
+	public int health;
 
 	void Start() {
 		health = MAX_HEALTH;
@@ -25,6 +25,11 @@ public class HealthScript : MonoBehaviour {
 
 	public void IncreaseHealth(int amount) {
 		health = Mathf.Min(health + amount, MAX_HEALTH);
+	}
+
+	public bool isSick ()
+	{
+		return health < MAX_HEALTH / 2.0f;
 	}
 
 }
