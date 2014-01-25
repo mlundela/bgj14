@@ -3,10 +3,14 @@ using System.Collections;
 
 public class HealthScript : MonoBehaviour {
 
+	int MAX_HEALTH = 200;
+	int health;
 
-	int health = 100;
+	void Start() {
+		health = MAX_HEALTH;
+	}
 
-	void Update () {
+	void FixedUpdate() {
 
 		health -= 1;
 		
@@ -20,7 +24,7 @@ public class HealthScript : MonoBehaviour {
 	}
 
 	public void IncreaseHealth(int amount) {
-		health = Mathf.Min(health + amount, 1000);
+		health = Mathf.Min(health + amount, MAX_HEALTH);
 	}
 
 }
