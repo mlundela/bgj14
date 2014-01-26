@@ -4,9 +4,23 @@ using System.Collections;
 public class HUDScript : MonoBehaviour {
 
 	float score = 0;
+	public GameObject player;
+	HealthScript ht;
+
+	void Start(){
+		ht = player.GetComponent<HealthScript> ();
+	}
 
 	void Update () {
-		score += Time.deltaTime;
+
+		if (ht.isSick ()) {
+
+			score += Time.deltaTime * 2;
+		} 
+		else {
+				score += Time.deltaTime;
+		}
+
 	}
 
 	void OnDisable() {
