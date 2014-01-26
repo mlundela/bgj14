@@ -15,7 +15,7 @@ public class HealthScript : MonoBehaviour {
 		health -= 1;
 		
 		if (health <= 0) {
-			Application.LoadLevel (1);		
+			Application.LoadLevel(1);		
 		} 
 	}
 
