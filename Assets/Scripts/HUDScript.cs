@@ -14,10 +14,13 @@ public class HUDScript : MonoBehaviour {
 	void Update () {
 
 		if (ht.isSick ()) {
-			score += Time.deltaTime*2;
-				} else {
-						score += Time.deltaTime;
-				}
+
+			score += Time.deltaTime * 2;
+		} 
+		else {
+				score += Time.deltaTime;
+		}
+
 	}
 
 	void OnDisable() {
