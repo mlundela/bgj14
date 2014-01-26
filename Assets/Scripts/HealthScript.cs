@@ -3,7 +3,7 @@ using System.Collections;
 
 public class HealthScript : MonoBehaviour {
 
-	public int MAX_HEALTH = 1600;
+	public int MAX_HEALTH = 500;
 	public int health;
 
 	void Start() {
@@ -30,6 +30,10 @@ public class HealthScript : MonoBehaviour {
 	public bool isSick ()
 	{
 		return health < MAX_HEALTH / 2.0f;
+	}
+
+	public float GetHealtAsFloat() {
+		return (float)health / MAX_HEALTH;
 	}
 
 }
