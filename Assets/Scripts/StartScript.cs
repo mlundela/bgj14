@@ -2,9 +2,10 @@
 using System.Collections;
 
 public class StartScript : MonoBehaviour {
-
-	void OnMouseClick() {
-		Debug.Log("Mouse click...");
-		Application.LoadLevel (1);
+	
+	void OnGUI() {
+		if (GUI.Button (new Rect (35, 140, 60, 30), "Start")) {
+			Application.LoadLevel(1);		
+		}
 	}
 }
